@@ -8,6 +8,11 @@ import json
 from pprint import pprint
 import h5py
 
+#
+# TO DOs
+#
+# 1. Add the reference to Sensors ontology
+
 
 # ACOS LITE file
 f = h5py.File('ACOSv3.4r02_L3_20100101_000000_20130515_000000.h5', libver='earliest')
@@ -27,7 +32,7 @@ geo = {"type" : "FeatureCollection",
                {
                 "type" : "Feature",
                 "geometry" : {"type": "Point",
-                              "coordinates" : [ lat[0], lon[0]]
+                              "coordinates" : [lat[0], lon[0]]
                               }
                 },
                {
