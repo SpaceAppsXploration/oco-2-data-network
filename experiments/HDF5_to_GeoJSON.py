@@ -5,8 +5,11 @@ Created on Thu Apr 16 15:23:47 2015
 @author: jacopo
 """
 import json
+from pprint import pprint
 import h5py
 
+
+# ACOS LITE file
 f = h5py.File('ACOSv3.4r02_L3_20100101_000000_20130515_000000.h5', libver='earliest')
 
 xco2 = f['xco2']
@@ -43,6 +46,9 @@ geo = {"type" : "FeatureCollection",
       }
 
 
-with open('geo.json', 'w') as outfile:
-    json.dump(geo, outfile)
+#with open('geo.json', 'w') as outfile:
+    #json.dump(geo, outfile)
+
+# print a JSON with the quantity of xco2 for the given geometry
+pprint(json.dumps(geo))
 
