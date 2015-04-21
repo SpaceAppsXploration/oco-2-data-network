@@ -55,5 +55,5 @@ geo = {"type" : "FeatureCollection",
     #json.dump(geo, outfile)
 
 # print a JSON with the quantity of xco2 for the given geometry
-pprint(json.dumps(geo))
+print(json.dumps(geo, indent=4))
 
