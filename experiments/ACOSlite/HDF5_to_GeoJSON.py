@@ -14,7 +14,7 @@ import h5py
 # 1. Add the reference to Sensors ontology
 
 
-# ACOS LITE file
+# ACOS LITE file in the same directory
 f = h5py.File('ACOSv3.4r02_L3_20100101_000000_20130515_000000.h5', libver='earliest')
 
 xco2 = f['xco2']
