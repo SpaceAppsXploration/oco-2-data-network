@@ -6,8 +6,13 @@ Created on Thu Apr 16 15:23:47 2015
 """
 import json
 from pprint import pprint
+
+# http://docs.h5py.org/en/latest/high/file.html
 import h5py
 
+#
+# Links:
+# https://confluence.slac.stanford.edu/display/PSDM/How+to+access+HDF5+data+from+Python#HowtoaccessHDF5datafromPython-GetinformationaboutHDF5item
 #
 # TO DOs
 #
@@ -16,8 +21,6 @@ import h5py
 
 # OCO-2 file in the same directory
 f = h5py.File('oco2_L2StdGL_02675a_150101_B6000r_150411233719.h5', 'r', libver='earliest')
-
-import h5py    # HDF5 support
 
 for item in f.keys():
     #if item == 'Metadata':

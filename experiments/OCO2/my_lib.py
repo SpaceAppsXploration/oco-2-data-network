@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 '''
 my_lib: routines to support reading & writing HDF5 files using h5py
+http://download.nexusformat.org/sphinx/examples/h5py/index.html
 '''
 
 import h5py    # HDF5 support

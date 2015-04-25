@@ -2,6 +2,7 @@
 
 '''
 Print the structure of an HDF5 file to stdout
+http://download.nexusformat.org/sphinx/examples/h5py/index.html
 '''
 
 
