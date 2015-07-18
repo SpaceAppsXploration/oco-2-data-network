@@ -17,7 +17,7 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.DEBUG)
 
     app = web.Application(
-        [(r"/xoco2/by/square/([-\+]?[0-9]+\.?[0-9]+)/([-\+]?[0-9]+\.?[0-9]+)", Demo),
+        [(r"/xco2/by/square/([-\+]?[0-9]+\.?[0-9]+)/([-\+]?[0-9]+\.?[0-9]+)", Demo),
          (r"/error", ErrorHandler),
          (r"/(.*)", ErrorHandler),
          ],

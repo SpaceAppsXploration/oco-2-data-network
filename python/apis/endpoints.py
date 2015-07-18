@@ -13,7 +13,7 @@ DATA = os.path.join(PATH, '../OCO2')
 class Demo(tornado.web.RequestHandler):
     """
     Demo Handler for XOCO2 by square of the map
-    url: /xoco2/by/square/{latitude}/{longitude}
+    url: /xco2/by/square/{latitude}/{longitude}
     """
     @staticmethod
     def make_path(filename):

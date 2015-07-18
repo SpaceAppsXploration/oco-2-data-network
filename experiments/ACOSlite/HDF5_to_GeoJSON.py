@@ -38,11 +38,26 @@ geo = {"type" : "FeatureCollection",
                {
                 "type" : "Feature",
                 "geometry" : {
-                "type" : "polygon",
-                "coordinates" : [[lon_bnds[0,0], lat_bnds[0,0]], [lon_bnds[0,0], 
-                              lat_bnds[0,1]], [lon_bnds[0,1], lat_bnds[0,0]], 
-                             [lon_bnds[0,1], lat_bnds[0,1]] ]
-                             },
+                    "type" : "polygon",
+                    "coordinates" : [
+                        [
+                            lon_bnds[0,0],
+                            lat_bnds[0,0]
+                        ],
+                        [
+                            lon_bnds[0,0],
+                            lat_bnds[0,1]
+                        ],
+                        [
+                            lon_bnds[0,1],
+                            lat_bnds[0,0]
+                        ],
+                        [
+                            lon_bnds[0,1],
+                            lat_bnds[0,1]
+                        ]
+                    ]
+                },
                "properties": {
                    "xco2" : xco2_set[12]        
                }
